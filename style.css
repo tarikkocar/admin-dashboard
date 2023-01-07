@@ -27,7 +27,7 @@ body,html {
 
 .greeting {
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: calc(1em + 0.5vw);
     font-weight: 600;
 }
 
@@ -36,6 +36,7 @@ body,html {
     align-items: center;
     gap: 10px;
     margin-left: 10px;
+    font-size: calc(0.5em + 0.5vw);
 }
 
 .profile-picture > img {
@@ -110,6 +111,7 @@ input {
 
 .section-title {
     margin-left: 0.5em;
+    font-size: 2vh;
     font-weight: 600;
 }
 
@@ -138,6 +140,7 @@ input {
     flex-direction: column;
     gap: 10px;
     max-height: 15em;
+    overflow: auto;
     padding-left: 1em;
     background: linear-gradient(to right,
     #f8a581,
@@ -147,13 +150,13 @@ input {
 }
 
 .project-title {
-    font-size: 1em;
+    font-size: calc(10px + 1vh);
     font-weight: 600;
     padding: 0.5em;
 }
 
 .project-description {
-    font-size: 0.8em;
+    font-size: calc(5px + 1vh);
     font-weight: lighter;
     margin-top: 0.3em;
     padding: 0.5em;
@@ -190,12 +193,12 @@ input {
 }
 
 .announcement div:first-child {
-    font-size: 0.9em;
+    font-size: calc(10px + 1vh);
     font-weight: 600;
 }
 
 .announcement div:nth-child(2) {
-    font-size: 0.8em;
+    font-size: calc(5px + 1vh);
 }
 
 a {
