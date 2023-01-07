@@ -6,80 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;600&display=swap'); </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <p class="greeting">Hi there, Tarik!</p>
             <input type="text">
-            <img src="" alt="">
-            <p>Tarik Kocar</p>
-            <img src="" alt="">
+            <a href="#"><img src="./images/search.svg" alt=""></a>
+            <a href="#"><img src="./images/notifications.svg" alt=""></a>
+            <a href="#" class="profile-picture">
+                <p>Tarik Kocar</p>
+                <img src="./images/penguin.png" alt="">
+            </a>
         </div>
         <div class="sidebar">
-            <a href="#">
-                <img src="./svg-files/dashboard.svg" alt="" class="logo">
+            <a href="#" id="dashboard">
+                <img src="./images/dashboard.svg" alt="" class="logo">
                 Dashboard
             </a>
-            <a href="#">
-                <img src="./svg-files/home.svg" alt="">
+            <a href="#" class="home">
+                <img src="./images/home.svg" alt="">
                 Home
             </a>
-            <a href="#">
-                <img src="./svg-files/person.svg" alt="">
+            <a href="#" class="profile">
+                <img src="./images/person.svg" alt="">
                 Profile
             </a>
-            <a href="#">
-                <img src="./svg-files/chat.svg" alt="">
+            <a href="#" class="messages">
+                <img src="./images/chat.svg" alt="">
                 Messages
             </a>
-            <a href="#">
-                <img src="./svg-files/insights.svg" alt="">
+            <a href="#" class="stats">
+                <img src="./images/insights.svg" alt="">
                 Stats
             </a>
-            <a href="#">
-                <img src="./svg-files/task.svg" alt="">
+            <a href="#" class="tasks">
+                <img src="./images/task.svg" alt="">
                 Tasks
             </a>
-            <a href="#">
-                <img src="./svg-files/groups.svg" alt="">
+            <a href="#" class="community">
+                <img src="./images/groups.svg" alt="">
                 Community
             </a>
-            <a href="#">
-                <img src="./svg-files/settings.svg" alt="">
+            <a href="#" class="settings">
+                <img src="./images/settings.svg" alt="">
                 Settings
             </a>
-            <a href="#">
-                <img src="./svg-files/help.svg" alt="">
+            <a href="#" class="help">
+                <img src="./images/help.svg" alt="">
                 Help
             </a>
+            <div class="footer">
+                <span class="credits">tarikkocar © 2023</span>
+                <a href="https://github.com/tarikkocar" target="_blank"><img src="./images/github-gray.svg"></a>
+            </div>
         </div>
         <div class="main-content">
             <div class="main-content-left">
-                <div class="chart">
-
+                <div class="section-title">Sales</div>
+                <div class="chart content-box">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/12374966" data-width="100%" data-height="93%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                 </div>
+                <div class="section-title">Projects</div>
                 <div class="cards">
-                    <div class="card">
+                    <div class="card content-box">
+                        <div class="project-title">Super Cool Project</div>
+                        <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
-                    <div class="card">
+                    <div class="card content-box">
+                        <div class="project-title">Less Cool Project</div>
+                        <div class="project-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                     </div>
-                    <div class="card">
+                    <div class="card content-box">
+                        <div class="project-title">Meh Project</div>
+                        <div class="project-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
                     </div>
-                    <div class="card">
-                    </div>
-                    <div class="card">
-                    </div>
-                    <div class="card">
+                    <div class="card content-box">
+                        <div class="project-title">Boring Project</div>
+                        <div class="project-description">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
                     </div>
                 </div>
             </div>
             <div class="main-content-right">
-                <div class="channels">
-
+                <div class="section-title">Customer Demographics</div>
+                <div class="demographic content-box">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/12375338" data-width="100%" data-height="45%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/12375463" data-height="45%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
                 </div>
-                <div class="announcements">
-                    
+                <div class="section-title">Announcements</div>
+                <div class="announcements content-box">
+                    <div class="announcement">
+                        <div>Site Maintenance</div>
+                        <div>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
+                    </div>
+                    <div class="announcement">
+                        <div>Community Share Day</div>
+                        <div>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</div>
+                    </div>
+                    <div class="announcement">
+                        <div>Updated Privacy Policy</div>
+                        <div>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo</div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
 }
 
 body,html {
@@ -9,7 +10,7 @@ body,html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 8fr;
     grid-template-rows: 60px auto;
     height: 100vh;
 }
@@ -19,67 +20,207 @@ body,html {
     display: flex;
     gap: 10px;
     align-items: center;
-    border: 1px solid black;
+    border-bottom: 1px solid #e6e3d3;
+    padding: 0 2em;
+    background-color: #F7F5EB;
 }
 
 .greeting {
     margin-right: auto;
-    margin-left: 2em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.profile-picture > img {
+    height: 40px;
+    width: auto;
+}
+
+img[src="./images/search.svg"] {
+    padding-right: 0.7em;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    border-radius: 10px;
+    border: rgb(137, 149, 174) solid 1.5px;
 }
 
 .sidebar {
     grid-row: 1 / -1;
-    display: grid;
-    gap: 20px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em;
+    background-color: #6194a9;
 }
 
-input {
-    height: 20px;
+.sidebar > a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: fit-content;
+    color: #fff8f8;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.sidebar img {
+    filter: invert(100%) sepia(21%) saturate(1066%) hue-rotate(294deg) brightness(116%) contrast(87%);
+}
+
+#dashboard {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 35px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.settings {
+    margin-top: 50px;
 }
 
 .main-content {
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: #F7F5EB;
+}
+
+.main-content-left div,  
+.main-content-right div {
+    border-radius: 10px;
 }
 
 .main-content-left {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    margin: 2em;
+    gap: 10px;
+    margin: 1em 2em 1em 2em;
+    min-width: 200px;
+}
+
+.section-title {
+    margin-left: 0.5em;
+    font-weight: 600;
+}
+
+.content-box {
+    background-color: white;
+    border: 1px solid rgb(229, 231, 235);
+    box-shadow: 0.5px 2px 2px #dcd7ce;
 }
 
 .chart {
     width: 100%;
     height: 50%;
-    border: 1px solid black;
+    overflow: hidden;
+    padding: 1em;
 }
 
 .cards {
     flex: 1;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 .card {
-    border: 1px solid black;
-    max-height: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 15em;
+    padding-left: 1em;
+    background: linear-gradient(to right,
+    #f8a581,
+    #f8a581 1rem,
+    white 1rem,
+    white 100%);
+}
+
+.project-title {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.project-description {
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin-top: 0.3em;
+    padding: 0.5em;
 }
 
 .main-content-right {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    gap: 50px;
-    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1em 2em 2em 0.1em;
+    min-width: 200px;
 }
 
-.main-content-right > div {
-    border: 1px solid black;
+.demographic {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+.announcements {
+    padding: 1em;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.announcement div:first-child {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.announcement div:nth-child(2) {
+    font-size: 0.8em;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    transform: scale(1.07);
+}
+
+.footer a {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+    margin-top: auto;
+    color: #fff8f8;
+}
+
+img[src="./images/github-gray.svg"] {
+    height: 17px;
+    width: auto;
 }
