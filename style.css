@@ -1,8 +1,7 @@
 :root {
-    --primary-font: ;
-    --main-bg-color: ;
-    --sidebar-bg-color: ;
-
+    --main-bg-color: #F7F5EB;
+    --sidebar-bg-color: #6194a9;
+    --common-padding: 1em;
 }
 
 * {
@@ -30,7 +29,7 @@ body,html {
     align-items: center;
     border-bottom: 1px solid #e6e3d3;
     padding: 0 2em;
-    background-color: #F7F5EB;
+    background-color: var(--main-bg-color);
 }
 
 .greeting {
@@ -69,7 +68,7 @@ input {
     flex-direction: column;
     gap: 2em;
     padding: 1.5em;
-    background-color: #6194a9;
+    background-color: var(--sidebar-bg-color);
 }
 
 .sidebar > a {
@@ -77,13 +76,13 @@ input {
     align-items: center;
     gap: 20px;
     max-width: fit-content;
-    color: #fff8f8;
+    color: var(--main-bg-color);
     font-size: 1.2em;
     font-weight: 600;
 }
 
 .sidebar img {
-    filter: invert(100%) sepia(21%) saturate(1066%) hue-rotate(294deg) brightness(116%) contrast(87%);
+    filter: invert(94%) sepia(6%) saturate(531%) hue-rotate(41deg) brightness(110%) contrast(94%);
 }
 
 #dashboard {
@@ -101,7 +100,7 @@ input {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: #F7F5EB;
+    background-color: var(--main-bg-color);
 }
 
 .main-content-left div,  
@@ -133,7 +132,7 @@ input {
     width: 100%;
     height: 50%;
     overflow: hidden;
-    padding: 1em;
+    padding: var(--common-padding);
 }
 
 .cards {
@@ -149,7 +148,7 @@ input {
     gap: 10px;
     max-height: 15em;
     overflow: auto;
-    padding-left: 1em;
+    padding-left: var(--common-padding);
     background: linear-gradient(to right,
     #f8a581,
     #f8a581 1rem,
@@ -181,13 +180,13 @@ input {
 .demographic {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: var(--common-padding);
     overflow: hidden;
     flex: 1 1 auto;
 }
 
 .announcements {
-    padding: 1em;
+    padding: var(--common-padding);
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
