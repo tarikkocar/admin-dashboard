@@ -1,3 +1,10 @@
+:root {
+    --primary-font: ;
+    --main-bg-color: ;
+    --sidebar-bg-color: ;
+
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
@@ -6,6 +13,7 @@
 body,html {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -104,7 +112,7 @@ input {
 .main-content-left {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1vw;
     margin: 1em 2em 1em 2em;
     min-width: 200px;
 }
@@ -165,7 +173,7 @@ input {
 .main-content-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1vw;
     margin: 1em 2em 2em 0.1em;
     min-width: 200px;
 }
@@ -183,7 +191,7 @@ input {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1vw;
 }
 
 .announcement {
