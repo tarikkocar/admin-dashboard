@@ -38,14 +38,6 @@ body,html {
     font-weight: 600;
 }
 
-.profile-picture {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-    font-size: calc(0.5em + 0.5vw);
-}
-
 .profile-picture > img {
     height: 40px;
     width: auto;
@@ -181,6 +173,7 @@ input {
 .demographic {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: var(--common-padding);
     overflow: hidden;
     flex: 1 1 auto;
